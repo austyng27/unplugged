@@ -367,6 +367,8 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
+/* Tablet Styles */
+
 @media only screen and (min-width: 768px) {
   /* General Styles */
   .content-wrapper {
@@ -459,8 +461,53 @@ footer .contact {
   width: 100%;
 }
 
+
+/* ---- Desktop Styles ----- */
 @media only screen and (min-width: 1200px) {
-  /* Desktop Styles Here */
+  /* General */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero Area */
+  .hero-area h1 {
+    width: 70%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-between;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 30%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 50%;
+  }
+
+  /* ------ About Page ----------- */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 90%;
+  }
+
+  /* -------- FAQ Page ---------- */
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
